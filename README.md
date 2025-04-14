@@ -31,7 +31,11 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 
 ## Getting Started
 #### Changing the IP Address of our Windows Server machine
+> :memo: **Note:** This step is being applied to the Windows Server 2019 machine
+
 1. Navigate to "Network Connections" in the Control Panel
 2. Identify which Ethernet connection is going to be for the "Internet" access and the "Internal" network access
 3. The "Internet" connection will get addressed through the DHCP. The "Internal" connection will need to be assigned the IP address shown in the [Project Overview](#project-overview)
+
+> :bulb: **Optional:** Change the name of the PC. This will just make things easier in the long run.
 ## Project Highlights
