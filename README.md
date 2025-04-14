@@ -12,7 +12,7 @@
 ## Project Overview
 
 ### Project Topology
-![Project-Topology](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/AD-Project.pdf)
+![Project-Topology](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/AD-Project.pdf?raw=true)
 
 ## Technologies
 
