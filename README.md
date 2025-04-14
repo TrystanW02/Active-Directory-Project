@@ -19,8 +19,8 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 ### *Project Breakdown*
 
 #### Project Network
-**Nat Network:** project-ad-network
-**IPv4 Prefix:** 192.168.10.0/24
+- **Nat Network:** project-ad-network
+- **IPv4 Prefix:** 192.168.10.0/24
 
 #### *Host*
 | *Hostname [project-ad-...]* | *IP Address*   | *Function*                          |
