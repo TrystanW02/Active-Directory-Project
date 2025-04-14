@@ -18,9 +18,9 @@
 
 ### *Project Breakdown*
 
-| Hostname [project-ad-...] | IP Address | Function |
-|---------------------------|------------|----------|
-|-dc (corp.project-ad-dc.com|            | Domain Controller (DNS, DHCP, etc.|
+| Hostname [project-ad-...] | IP Address | Function                           |
+|---------------------------|------------|------------------------------------|
+|-dc (corp.project-ad-dc.com|            | Domain Controller (DNS, DHCP, etc.)|
 
 ### *Technology Used*
 #### Hypervisor:
