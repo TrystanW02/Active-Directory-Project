@@ -18,6 +18,10 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 
 ### *Project Breakdown*
 
+#### Project Network
+**Nat Network:** project-ad-network
+**IPv4 Prefix:** 192.168.10.0/24
+
 #### *Host*
 | *Hostname [project-ad-...]* | *IP Address*   | *Function*                          |
 |-----------------------------|----------------|-------------------------------------|
@@ -30,16 +34,16 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 | *Account*                        | *Password* | *Host*         |
 |----------------------------------|------------|----------------|
 | Administrator                    | @password1 | ...-dc         |
-|                                  | @password1 | ...-splunk-svr |
+| twilliams                        | @password1 | ...-splunk-svr |
 | twilliams@corp.project-ad-dc.com | @password1 | ...-win-client |
 | attacker@attacker                | attacker   | attacker       |
 
 #### *Virtual Box VMs*
-| *VM Name*               | *Operating System*   | *Specs* | *Storage (Minimum)* |
-|-------------------------|----------------------|---------|---------------------|
-| [project-ad-dc]         | Windows Server 2022  |         |                     |
-| [project-ad-splunk-svr] | Ubuntu Server 2022   |         |                     |
-| [project-ad-win-client] | Windows 10 Pro       |         |                     |
-| [project-ad-attacker]   | Kali Linux           |         |                     |
+| *VM Name*               | *Operating System*   | *Specs*         | *Storage (Minimum)* |
+|-------------------------|----------------------|-----------------|---------------------|
+| [project-ad-dc]         | Windows Server 2022  | 1 CPU / 4096 MB | 50 GB               |
+| [project-ad-splunk-svr] | Ubuntu Server 2022   | 2 CPU / 8192    | 100 GB              |
+| [project-ad-win-client] | Windows 10 Pro       | 1 CPU / 4096 MB | 50 GB               |
+| [project-ad-attacker]   | Kali Linux           | Pre-Built       | Pre-Built           |
 
 ## Getting Started
