@@ -55,3 +55,9 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
    - Ubuntu Server 22.04.5: https://ubuntu.com/download/server
    - Windows 10: https://www.microsoft.com/en-us/software-download/windows10
    - Kali Linux: https://www.kali.org/get-kali/#kali-virtual-machines
+2. After each machine is installed and provisioned, make sure to connect all of the machines to the NAT network that you created.
+
+### Specific Machine Setups
+
+> :memo: **Note:** This next section will be for any specific configurations needed for the machines. This section will not cover initial installation settings or adding guest additions.
+
