@@ -61,7 +61,7 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 
 > :memo: **Note:** This next section will be for any specific configurations needed for the machines. This section will not cover initial installation settings or adding guest additions.
 
-#### Ubuntu Server 22.04.5 (Splunk)
+#### *Ubuntu Server 22.04.5 (Splunk)*
 ##### 1. Configuring the network information
 a. Assign the static IP address. To do this, type the following command
 ```
@@ -86,3 +86,7 @@ d. Type the following command to apply the settings <br>
 ```
 sudo netplan apply
 ```
+##### 2. Installing and configuring Splunk
+1. Navigate to https://www.splunk.com/ and create an account if you don't already have one.
+2. Navigate to "Trials & Downloads" and scroll to find "Splunk Enterprise"
+3. Select "Linux" and the ".deb" file path
