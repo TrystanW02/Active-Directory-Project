@@ -4,6 +4,7 @@
 
 1. [Project Overview](#project-overview)
    - [Project Topology](#project-topology)
+   - [Project Breakdown](#project-breakdown)
    - [Technology Used](#technology-used)
 2. [Purpose](#purpose)
 3. [Getting Started](#getting-started)
@@ -15,6 +16,12 @@
 ### *Project Topology*
 ![Project Topology](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-14%20092523.png?raw=true)
 
+### *Project Breakdown*
+
+| Hostname [project-ad-...] | IP Address | Function |
+|---------------------------|------------|----------|
+|-dc (corp.project-ad-dc.com|            | Domain Controller (DNS, DHCP, etc.|
+
 ### *Technology Used*
 #### Hypervisor:
 - Virtual Box
@@ -23,7 +30,7 @@
 - Windows 10 Pro ISO
 - Windows Server 2019
 - Powershell
-- Splunk
+- Splunk (Ubunutu Server 2022)
 - Kali Linux
 
 ## Purpose
