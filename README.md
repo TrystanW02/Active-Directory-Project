@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
+1. [Project Overview](#project-overview)
 
 ## Project Overview
 
