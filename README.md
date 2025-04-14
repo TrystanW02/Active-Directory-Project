@@ -7,8 +7,6 @@
    - [Project Topology](#project-topology)
    - [Project Breakdown](#project-breakdown)
 2. [Getting Started](#getting-started)
-   - 
-3. [Project Highlights](#project-highlights)
 
 ## Project Overview
 
