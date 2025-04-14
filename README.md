@@ -43,7 +43,7 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 | *VM Name*               | *Operating System*    | *Specs*         | *Storage (Minimum)* |
 |-------------------------|-----------------------|-----------------|---------------------|
 | [project-ad-dc]         | Windows Server 2022   | 1 CPU / 4096 MB | 50 GB               |
-| [project-ad-splunk-svr] | Ubuntu Server 22.05.5 | 2 CPU / 8192    | 100 GB              |
+| [project-ad-splunk-svr] | Ubuntu Server 22.04.5 | 2 CPU / 8192    | 100 GB              |
 | [project-ad-win-client] | Windows 10 Pro        | 1 CPU / 4096 MB | 50 GB               |
 | [project-ad-attacker]   | Kali Linux            | Pre-Built       | Pre-Built           |
 
@@ -61,3 +61,21 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 
 > :memo: **Note:** This next section will be for any specific configurations needed for the machines. This section will not cover initial installation settings or adding guest additions.
 
+#### Ubuntu Server 22.04.5 (Splunk)
+##### Configuring the network information
+1. Assign the static IP address. To do this, type the following command
+```
+sudo nano /etc/netplan/00-installer-config-yaml
+```
+2. Delete "true" under "dhcp4" and replace with "no". Hit the "Enter" key
+3. Tab 3 times and type in "addresses". Type [192.168.10.10/24] (or whatever your IP address range is). Hit the "Enter" key
+4. Tab 3 times and type in "nameservers". Hit the "Enter" key
+5. Tab 5 times and type in "addresses". Type [8.8.8.8], hit the "Enter" key
+6. Tab 3 times and type in "routes". Hit the "Enter" key
+7. Tab 5 times and type in "- to: default". Hit the "Enter" key
+8. Tab 6 times and type in "via: 192.168.10.1".
+9. Save by hitting "Ctrl + X", type in "Y"
+10. Type the following command to apply the settings
+```
+sudo netplan apply
+```
