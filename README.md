@@ -7,7 +7,8 @@
    - [Technology Used](#technology-used)
 2. [Purpose](#purpose)
 3. [Getting Started](#getting-started)
-4. [Project Highlights](#project-highlights)
+   - [Changing IP Address](#changing-the-ip-address-of-our-windows-server-machine)
+5. [Project Highlights](#project-highlights)
 
 ## Project Overview
 
@@ -22,10 +23,15 @@
 - Windows 10 Pro ISO
 - Windows Server 2019
 - Powershell
+- Splunk
+- Kali Linux
 
 ## Purpose
 The purpose of this project is to get familiar with Windows Active Directory. This project shows how to setup AD and add the different functionalities to it (Domain Controller, DHCP, RAS/NAT, etc.), as well as adding users to the domain using Powershell scripting. This project starts off basic, with the intention of adding more on to it in the future and add additional security functionality.
 
 ## Getting Started
-
+#### Changing the IP Address of our Windows Server machine
+1. Navigate to "Network Connections" in the Control Panel
+2. Identify which Ethernet connection is going to be for the "Internet" access and the "Internal" network access
+3. The "Internet" connection will get addressed through the DHCP. The "Internal" connection will need to be assigned the IP address shown in the [Project Overview](#project-overview)
 ## Project Highlights
