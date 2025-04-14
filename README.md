@@ -4,6 +4,7 @@
 
 1. [Project Overview](#project-overview)
    - [Project Topology](#project-topology)
+   - [Technology Used](#technology-used)
 2. [Purpose](#purpose)
 3. [Getting Started](#getting-started)
 4. [Project Highlights](#project-highlights)
