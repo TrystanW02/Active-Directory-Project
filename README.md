@@ -68,14 +68,14 @@ a. Assign the static IP address. To do this, type the following command
 sudo nano /etc/netplan/00-installer-config-yaml
 ```
 b. Delete "true" under "dhcp4" and replace with "no". Hit the "Enter" key <br>
-c. Tab 3 times and type in "addresses". Type [192.168.10.10/24] (or whatever your IP address range is). Hit the "Enter" key
-d. Tab 3 times and type in "nameservers". Hit the "Enter" key
-e. Tab 5 times and type in "addresses". Type [8.8.8.8], hit the "Enter" key
-f. Tab 3 times and type in "routes". Hit the "Enter" key
-g. Tab 5 times and type in "- to: default". Hit the "Enter" key
-h. Tab 6 times and type in "via: 192.168.10.1".
-i. Save by hitting "Ctrl + X", type in "Y"
-j. Type the following command to apply the settings
+c. Tab 3 times and type in "addresses". Type [192.168.10.10/24] (or whatever your IP address range is). Hit the "Enter" key <br>
+d. Tab 3 times and type in "nameservers". Hit the "Enter" key <br>
+e. Tab 5 times and type in "addresses". Type [8.8.8.8], hit the "Enter" key <br>
+f. Tab 3 times and type in "routes". Hit the "Enter" key <br>
+g. Tab 5 times and type in "- to: default". Hit the "Enter" key <br>
+h. Tab 6 times and type in "via: 192.168.10.1". <br>
+i. Save by hitting "Ctrl + X", type in "Y" <br>
+j. Type the following command to apply the settings <br>
 ```
 sudo netplan apply
 ```
