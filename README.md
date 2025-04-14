@@ -19,12 +19,12 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 ### *Project Breakdown*
 
 #### *Host*
-| *Hostname [project-ad-...]* | *IP Address* | *Function*                          |
-|-----------------------------|--------------|-------------------------------------|
-|-dc (corp.project-ad-dc.com  |              | Domain Controller (DNS, DHCP, etc.) |
-|-splunk-svr                  |              | SIEM                                |
-|-win-client                  |              | Windows Workstation                 |
-| attacker                    |              | Attacker Envrionment                |
+| *Hostname [project-ad-...]* | *IP Address*   | *Function*                          |
+|-----------------------------|----------------|-------------------------------------|
+|-dc (corp.project-ad-dc.com  | 192.168.10.7   | Domain Controller (DNS, DHCP, etc.) |
+|-splunk-svr                  | 192.168.10.10  | SIEM                                |
+|-win-client                  | Dynamic        | Windows Workstation                 |
+| attacker                    | 192.168.10.250 | Attacker Envrionment                |
 
 #### *Accounts & Passwords*
 | *Account*                        | *Password* | *Host*         |
