@@ -157,7 +157,7 @@ sudo -u splunk bash
 
 19. To ensure Splunk starts everytime the machine starts, type `exit` >> `cd bin` >> then type the following command:
 ```
-sudo ./splunk enable boot-start -user splunl
+sudo ./splunk enable boot-start -user splunk
 ```
 
 <br>
@@ -276,7 +276,7 @@ source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 
 ## Add PC to the domain
 
-> :warning: **Attention:** The following steps CANNOT be completed until the Domain Controller is fully configured and functional
+> :warning: **Attention:** Steps 1 & 2 CANNOT be completed until the Domain Controller is fully configured and functional
 
 <br>
 
@@ -285,6 +285,55 @@ source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 <br>
 
 2. Sign in with the newly created users
+
+<br>
+
+## Enable Remote Desktop Protocol (RDP)
+
+1. Search "PC" in the search bar, click on "Properties" >> click "Advanced system settings", login with the administrator credentials
+
+<br>
+
+2. Click the "Remote" tab >> select "Allow remote connections to the computer", click "Select Users" >> add the 2 users that were created earlier
+
+<br>
+
+## Install & configure Atomic Red Team
+
+1. Open Powershell with admin privileges
+
+<br>
+
+2. Type `Set-ExecutionPolicy Bypass CurrentUser` >> type "Y", hit "Enter"
+
+<br>
+
+3. Navigate to Windows Security >> click "Virus & threat protection", "Manage settings" >> under "Exclusions", click "Add or remove exclusions" >> Add an exclusion and select "Folder" >> select the "C:" drive >> login as administrator
+
+<br>
+
+4. Run the following commands to install ATR:
+```
+IEX (IWR https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicredteam.ps1 -UseBasicParsing);
+```
+```
+Install-AtomicRedTeam -getAtomics
+```
+
+<br>
+
+5. Hit "Y" when prompted to install dependencies
+
+<br>
+
+6. Navigate to the "C:" drive, click into the "AtomicRedTeam" >> "atomics"
+
+<br>
+
+7. These tactics match with the MITRE ATT&CK framework. To use any of them, type the following command:
+```
+Invoke-AtomicTest [TECHNIQUE-TO-TEST]
+```
 
 <br>
 
