@@ -11,7 +11,7 @@
    - [Configure the network](#configure-the-network-server)
    - [Add domain services and promote to domain controller](#add-domain-services-and-promote-to-domain-controller)
    - [Add users to the domain](#add-users-to-the-domain)
-4. [Kali Linux (Attacker)]
+4. [Kali Linux (Attacker)](#kali-linux-attacker)
 
 # *Ubuntu Server 22.04.5 (Splunk)*
 
