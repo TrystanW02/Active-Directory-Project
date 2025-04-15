@@ -91,7 +91,10 @@ sudo apt-get install virtualbox-guest-additions-iso
 
 <br>
 
-8. Back at the command line, type `sudo reboot` and sign back in
+8. Back at the command line, run the following command to reboot, then sign back in:
+```
+sudo reboot
+```
 
 <br>
 
@@ -102,13 +105,15 @@ sudo apt-get install virtualbox-guest-utils
 
 <br>
 
-10. Type `sudo reboot`
+10. ```
+    sudo reboot
+    ```
 
 <br>
 
 11. Type the following command:
 ```
-sudo adduser [yourusername] vboxsf
+sudo adduser [USER-NAME] vboxsf
 ```
 
 <br>
@@ -135,7 +140,10 @@ sudo dpkg -i [splunk-file-name]
 
 <br>
 
-16. Change to the user 'splunk' by typing `sudo -u splunk bask`
+16. Change to the user 'splunk' by typing the following command:
+```
+sudo -u splunk bash
+```
 
 <br>
 
@@ -147,7 +155,10 @@ sudo dpkg -i [splunk-file-name]
 
 <br>
 
-19. To ensure Splunk starts everytime the machine starts, type `exit` >> `cd bin` >> `sudo ./splunk enable boot-start -user splunk`
+19. To ensure Splunk starts everytime the machine starts, type `exit` >> `cd bin` >> then type the following command:
+```
+sudo ./splunk enable boot-start -user splunl
+```
 
 <br>
 
