@@ -131,7 +131,7 @@ sudo mount -t vboxsf -o uid=1000,gid=1000 [shared-folder-name] share/
 
 14. Type `cd share` >> Type the following command to install Splunk:
 ```
-sudo dpkg -i [splunk-file-name]
+sudo dpkg -i [SPLUNK-FILE-NAME]
 ```
 
 <br>
@@ -380,9 +380,12 @@ Invoke-AtomicTest [TECHNIQUE-TO-TEST]
 >:memo: **Note:** The default username and password is ***kali***
 >
 >:warning: **Warning:** The use of this OS is for educational purposes only. I do not condone, nor encourage the use of unauthorized attacks on any machine. Always practice safe, ***AND ETHICAL***, hacking.
+
 <br>
 
 1. Assign the IP address from the [project breakdown](https://github.com/TrystanW02/Active-Directory-Project?tab=readme-ov-file#project-breakdown)
+
+<br>
 
 2. Update all of the repositories with the following command:
 ```
@@ -391,26 +394,47 @@ sudo apt-get update && sudo apt-get upgrade -y
 
 <br>
 
-3. Make a new directory called "ad-project" `mkdir ad-project`
+3. Make a new directory called "ad-project"
+```
+mkdir ad-project
+```
+
+<br>
 
 4. Type the following command to install the application "Crowbar":
 ```
 sudo apt-get intall -y crowbar
 ```
 
+<br>
+
 5. Type `cd /usr/share/wordlists` >> `sudo gunzip rockyou.txt.gz` to unzip the textfile
 
+<br>
+
 6. Copy the textfile to the new project folder `cp rockyou.txt ~/Desktop/ad-project` >> change into the directory now `cd ~/Desktop/ad-project`
+
+<br>
 
 7. Just to use the first 20 lines, use the following command:
 ```
 head -n 20 rockyou.txt > passwords.txt
 ```
 
-8. To see the contents of the file, use `cat passwords.txt`
+<br>
+
+8. To see the contents of the file, use:
+```
+cat passwords.txt
+```
+
+<br>
 
 9. To edit the file in order to target a specific password, use `nano passwords.txt` >> add the password you've been using to the list >> Ctrl + X to save
 
+<br>
+
 10. To execute the tool, type the following command:
 ```
-crowbar -b rdp -u [user-to-target] -C passwords.txt -s [target-IP/32] 
+crowbar -b rdp -u [TARGET-USER] -C passwords.txt -s [TARGET-IP/32] 
+```
