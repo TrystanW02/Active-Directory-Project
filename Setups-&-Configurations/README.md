@@ -6,7 +6,7 @@
    - [Finalize Splunk server configuration](#finalize-splunk-server-configuration)
 2. [Windows 10 (Target)](#windows-10-target)
    - [Configure the network](#configure-the-network-windows)
-   - [Install & configure Universal Forwarder and Sysmon](#install-&-configure-universal-forwarder-and-sysmon)
+   - [Install & configure Universal Forwarder and Sysmon](#install--configure-universal-forwarder-and-sysmon)
    - [Add PC to the domain](#add-pc-to-the-domain)
    - [Enable Remote Desktop Protocol (RDP)](#enable-remote-desktop-protocol-rdp)
    - [Install & configure Atomic Red Team](#install--configure-atomic-red-team)
