@@ -373,37 +373,6 @@ Invoke-AtomicTest [TECHNIQUE-TO-TEST]
 
 <br>
 
-## Enable Remote Desktop Protocol (RDP)
-
-1. Search "PC" in the search bar, click on "Properties" >> click "Advanced system settings", login with the administrator credentials
-
-2. Click the "Remote" tab >> select "Allow remote connections to the computer", click "Select Users" >> add the 2 users that were created earlier
-
-## Install & configure Atomic Red Team
-
-1. Open Powershell with admin privileges
-
-2. Type `Set-ExecutionPolicy Bypass CurrentUser` >> type "Y", hit "Enter"
-
-3. Navigate to Windows Security >> click "Virus & threat protection", "Manage settings" >> under "Exclusions", click "Add or remove exclusions" >> Add an exclusion and select "Folder" >> select the "C:" drive >> login as administrator
-
-4. Run the following commands to install ATR:
-```
-IEX (IWR https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicredteam.ps1 -UseBasicParsing);
-```
-```
-Install-AtomicRedTeam -getAtomics
-```
-
-5. Hit "Y" when prompted to install dependencies
-
-6. Navigate to the "C:" drive, click into the "AtomicRedTeam" >> "atomics"
-
-7. These tactics match with the MITRE ATT&CK framework. To use any of them, type the following command:
-```
-Invoke-AtomicTest [TECHNIQUE-TO-TEST]
-```
-
 ***
 
 # Kali Linux (Attacker)
