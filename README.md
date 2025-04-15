@@ -26,7 +26,7 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 ### *Host*
 | *Hostname [project-ad-...]* | *IP Address*   | *Function*                          |
 |-----------------------------|----------------|-------------------------------------|
-|-dc (corp.project-ad-dc.com  | 192.168.10.7   | Domain Controller (DNS, DHCP, etc.) |
+|-dc (project-ad-dc.com)      | 192.168.10.7   | Domain Controller (DNS, DHCP, etc.) |
 |-splunk-svr                  | 192.168.10.10  | SIEM                                |
 |-win-client                  | Dynamic        | Windows Workstation                 |
 | attacker                    | 192.168.10.250 | Attacker Envrionment                |
@@ -36,7 +36,7 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 |----------------------------------|------------|----------------|
 | Administrator                    | @password1 | ...-dc         |
 | twilliams                        | @password1 | ...-splunk-svr |
-| twilliams@corp.project-ad-dc.com | @password1 | ...-win-client |
+| twilliams@project-ad-dc.com      | @password1 | ...-win-client |
 | attacker@attacker                | attacker   | attacker       |
 
 ### *Virtual Box VMs*
