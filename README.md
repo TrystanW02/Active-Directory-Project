@@ -61,11 +61,11 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 
 ## Specific Machine Setups
 
+***
+
 > :memo: **Note:** This next section will be for any specific configurations needed for the machines. This section will not cover initial installation settings.
 
 ### *Ubuntu Server 22.04.5 (Splunk)*
-
-***
 
 ### Configuring the network information
 1. Assign the static IP address. To do this, type the following command
@@ -91,7 +91,7 @@ network:
 ```
 sudo netplan apply
 ```
-### Installing and configuring Splunk
+### Installing and inital configuration of Splunk
 1. Navigate to https://www.splunk.com/ (**on host machine**) and create an account if you don't already have one.
 2. Navigate to "Trials & Downloads" and scroll to find "Splunk Enterprise"
 3. Select "Linux" and the ".deb" file path
@@ -126,3 +126,54 @@ sudo dpkg -i [splunk-file-name]
 17. Type `cd bin` >> `./splunk start` to run installer
 18. Type in your desired 'Administrator' username & password
 19. To ensure Splunk starts everytime the machine starts, type `exit` >> `cd bin` >> `sudo ./splunk enable boot-start -user splunk`
+
+***
+
+### *Windows 10 Machine (Target)*
+> :memo: **Optional:** You can change the name of the target machine to "Target" to better differenctiate the machines from each other
+>
+> :bulb: **Attention:** All of the following steps will be done on the WINDOWS 10 TARGET MACHINE.
+
+1. Search for "cmd" in the search bar, then run `ipconfig` to see the IP address of the machine
+2. Change the IP address to match the [project breakdown](#project-breakdown)
+3. Go to https://www.splunk.com/ (**on windows target machine**) and navigate to "Trials & Downloads" >> Start downloading "Universal Forwarder" for Windows 10
+4. Open the installer and follow the directions >> select a username and leave the "random password" box checked >> enter the IP address for the Splunk server in the "Receiving Indexer" box
+5. Navigate to https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon and click "Download Sysmon" >> go to https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml and download the raw .xml file
+6. Once sysmon is downloaded, "extract all" >> right click the top file manager bar, copy
+7. Open Powershell and run as administrator >> type `cd` then paste in the file path >> type `.\Sysmon64.exe -i ..\sysmonconfig.xml`
+8. Search notepad and run as administrator >> type the following:
+```
+[WinEventLog://Application]
+index = endpoint
+disabled = false
+
+[WinEventLog://Security]
+index = endpoint
+disabled = false
+
+[WinEventLog://System]
+index = endpoint
+disabled = false
+
+[WinEventLog://Microsoft-Windows-Sysmon/Operational]
+index = endpoint
+disabled = false
+renderXml = true
+source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
+```
+9. Save the file to the following directory: C:\Program Files\SplunkUniversalForwarder\etc\system\local and save it as `inputs.conf`
+
+> :memo: **Note:** 1) Any changes you make to this file will require you to restart Splunk Forwarder services
+> 2) You will have to change the Log On to "Local System account"
+
+***
+
+### Finalize Splunk server configuration
+
+> :bulb: **Attention:** All of the following steps will be done on the WINDOWS 10 TARGET MACHINE.
+
+1. Navigate to Splunk Enterprise by typing the IP address into the web browser search
+2. Type in the credentials you chose
+3. Hover over Settings >> "Indexes" >> "New Index" >> Type in "endpoint", click Save
+4. Hover over Settings >> "Forwarding and receiving" >> under "Receive data", click on "Configure receiving" >> "New Receiving Port" >> the default port for Splunk is *9997*
+5. To confirm the setup was successful, click "Apps" >> "Search & Reporting" >> type in "index=endpoint" >> this screen should show the events that have been reported!
