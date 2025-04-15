@@ -59,7 +59,7 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 
 ### Specific Machine Setups
 
-> :memo: **Note:** This next section will be for any specific configurations needed for the machines. This section will not cover initial installation settings or adding guest additions.
+> :memo: **Note:** This next section will be for any specific configurations needed for the machines. This section will not cover initial installation settings.
 
 #### *Ubuntu Server 22.04.5 (Splunk)*
 ##### 1. Configuring the network information
