@@ -197,7 +197,7 @@ sudo dpkg -i [splunk-file-name]
 
 <br>
 
-2. Change the IP address to match the [project breakdown](#project-breakdown)
+2. Change the IP address to match the [project breakdown](https://github.com/TrystanW02/Active-Directory-Project?tab=readme-ov-file#project-breakdown)
 
 <br>
 
