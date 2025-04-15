@@ -53,8 +53,23 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 
 ## Install and provision each OS needed for the project
 1. This step involves going and installing each of the necessary machines, as well as provision them according to the [Virtual Box VMs](#virtual-box-vms) section.
+
+<br>
+
    - Windows Server 2022: https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022
+
+<br>
+
    - Ubuntu Server 22.04.5: https://ubuntu.com/download/server
+
+<br>
+
    - Windows 10: https://www.microsoft.com/en-us/software-download/windows10
+
+<br>
+
    - Kali Linux: https://www.kali.org/get-kali/#kali-virtual-machines
+
+<br>
+
 2. After each machine is installed and provisioned, make sure to connect all of the machines to the NAT network that you created.
