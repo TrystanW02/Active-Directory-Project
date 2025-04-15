@@ -59,7 +59,7 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 
 > :memo: **Note:** This next section will be for any specific configurations needed for the machines. This section will not cover initial installation settings.
 
-## *Ubuntu Server 22.04.5 (Splunk)*
+### *Ubuntu Server 22.04.5 (Splunk)*
 ### Configuring the network information
 1. Assign the static IP address. To do this, type the following command
 ```
