@@ -2,12 +2,12 @@
 
 1. [Ubuntu Server 22.04.5 (Splunk)](#ubuntu-server-22045-splunk)
    - [Configure the network](#configure-the-network-ubuntu)
-   - [Initial installation & configuration of Splunk](#initial-installation-&-configuration-of-Splunk)
+   - [Initial installation & configuration of Splunk](#initial-installation--configuration-of-Splunk)
    - [Finalize Splunk server configuration](#finalize-splunk-server-configuration)
 2. [Windows 10 (Target)](#windows-10-target)
    - [Configure the network](#configure-the-network-windows)
    - [Install & configure Universal Forwarder and Sysmon](#install-&-configure-universal-forwarder-and-sysmon)
-3. [Windows Server 2022 (Active Directory & Domain Controller)](#windows-server-2022-active-directory-&-domain-controller)
+3. [Windows Server 2022 (Active Directory & Domain Controller)](#windows-server-2022-active-directory--domain-controller)
 
 # *Ubuntu Server 22.04.5 (Splunk)*
 
