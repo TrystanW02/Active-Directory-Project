@@ -7,6 +7,8 @@
 2. [Getting Started](#getting-started)
    - [Provision Each Machine](#install-and-provision-each-os-needed-for-the-project)
 
+***
+
 # Project Overview
 
 ## Purpose
@@ -45,6 +47,8 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 | [project-ad-win-client] | Windows 10 Pro        | 1 CPU / 4096 MB | 50 GB               |
 | [project-ad-attacker]   | Kali Linux            | Pre-Built       | Pre-Built           |
 
+***
+
 # Getting Started
 
 ## Install and provision each OS needed for the project
@@ -60,6 +64,9 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 > :memo: **Note:** This next section will be for any specific configurations needed for the machines. This section will not cover initial installation settings.
 
 ### *Ubuntu Server 22.04.5 (Splunk)*
+
+***
+
 ### Configuring the network information
 1. Assign the static IP address. To do this, type the following command
 ```
