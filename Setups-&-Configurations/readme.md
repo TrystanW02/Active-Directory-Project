@@ -7,6 +7,7 @@
 2. [Windows 10 (Target)](#windows-10-target)
    - [Configure the network](#configure-the-network-windows)
    - [Install & configure Universal Forwarder and Sysmon](#install-&-configure-universal-forwarder-and-sysmon)
+3. [Windows Server 2022 (Active Directory & Domain Controller)](#windows-server-2022-active-directory-&-domain-controller)
 
 # *Ubuntu Server 22.04.5 (Splunk)*
 
