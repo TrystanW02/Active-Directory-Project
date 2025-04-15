@@ -204,6 +204,10 @@ sudo dpkg -i [splunk-file-name]
 
 <br>
 
+3. Ensure the DNS server is pointing to the Domain Controllers IP address
+
+<br>
+
 ## Install & configure Universal Forwarder and Sysmon
 
 <br>
@@ -255,6 +259,20 @@ source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 
 > :memo: **Note:** 1) Any changes you make to this file will require you to restart Splunk Forwarder services
 > 2) You will have to change the Log On to "Local System account"
+
+<br>
+
+## Add PC to the domain
+
+> :warning: **Attention:** The following steps CANNOT be completed until the Domain Controller is fully configured and functional
+
+<br>
+
+1. Search "PC" in the search bar, click on "Properties" >> click "Advanced system settings" >> click the "Computer Name" tab >> select "Domain" >> type your domain into the box >> login with the credentials to the server >> restart the machine
+
+<br>
+
+2. Sign in with the newly created users
 
 <br>
 
