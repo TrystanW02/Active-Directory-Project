@@ -8,6 +8,9 @@
    - [Configure the network](#configure-the-network-windows)
    - [Install & configure Universal Forwarder and Sysmon](#install-&-configure-universal-forwarder-and-sysmon)
 3. [Windows Server 2022 (Active Directory & Domain Controller)](#windows-server-2022-active-directory--domain-controller)
+   - [Configure the network (Server)](#configure-the-network-server)
+   - [Add domain services and promote to domain controller](#add-domain-services-and-promote-to-domain-controller)
+   - [Add users to the domain](#add-users-to-the-domain)
 
 # *Ubuntu Server 22.04.5 (Splunk)*
 
@@ -265,16 +268,28 @@ source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 
 1. Change the IP address to match the [project breakdown](https://github.com/TrystanW02/Active-Directory-Project?tab=readme-ov-file#project-breakdown)
 
+<br>
+
 ## Add domain services and promote to domain controller
+
+<br>
 
 1. Navigate to Server Manager >> "Add Roles and Features" >> "Role based or feature based installation" >> select "Active Directory Domain Services" >> click through the windows and install
 
+<br>
+
 2. Click the flag icon at the top of the screen, click "Promote this server to a domain controller" >> "Add a new forest" and type what you want the domain to be >> type in a password for DSRM >> click through the windows and install
+
+<br>
 
 ## Add users to the domain
 
+<br>
+
 1. In Server Manager, hover over "Tools" and select "Active Directory Users and Computers" >> right click the domain, "New" then select "Organizational Unit" >> name it "IT" >> right click within the unit, "New" then select "User" >> type the first and last name of the user, as well as the username >> create a password >> uncheck "User must change password at next logon"
+
+<br>
 
 2. Repeat the same process, but change the Organizational Unit to "HR"
 
-
+<br>
