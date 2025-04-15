@@ -1,14 +1,18 @@
 # Table of Contents
 
 1. [Ubuntu Server 22.04.5 (Splunk)](#ubuntu-server-22.04.5-(splunk))
+   - [Configure the network](#concfigure-the-network)
+   - [Initial installation & configuration of Splunk](#initial-installation-&-configuration-of-Splunk)
 
 # *Ubuntu Server 22.04.5 (Splunk)*
 
-### Configuring the network information
+## Configure the network
 1. Assign the static IP address. To do this, type the following command
 ```
 sudo nano /etc/netplan/00-installer-config-yaml
 ```
+<br>
+
 2. The configuartion file should look like this in order to work:
 ```
 network:
@@ -28,7 +32,7 @@ network:
 ```
 sudo netplan apply
 ```
-### Installing and inital configuration of Splunk
+## Initial installation & configuration of Splunk
 1. Navigate to https://www.splunk.com/ (**on host machine**) and create an account if you don't already have one.
 2. Navigate to "Trials & Downloads" and scroll to find "Splunk Enterprise"
 3. Select "Linux" and the ".deb" file path
