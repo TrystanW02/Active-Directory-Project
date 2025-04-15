@@ -7,14 +7,14 @@
 # *Ubuntu Server 22.04.5 (Splunk)*
 
 ## Configure the network
-1. Assign the static IP address. To do this, type the following command
+1.   Assign the static IP address. To do this, type the following command
 ```
 sudo nano /etc/netplan/00-installer-config-yaml
 ```
 
 <br>
 
-2. The configuartion file should look like this in order to work:
+2.   The configuartion file should look like this in order to work:
 ```
 network:
    ethernets:
@@ -31,11 +31,11 @@ network:
 
 <br>
 
-3. Save by hitting "Ctrl + X", type in "Y" <br>
+3.   Save by hitting "Ctrl + X", type in "Y" <br>
 
 <br>
 
-4. Type the following command to apply the settings <br>
+4.   Type the following command to apply the settings <br>
 ```
 sudo netplan apply
 ```
