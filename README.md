@@ -64,4 +64,12 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 
 <br>
 
-For in depth setups and configurations of each machine, click [here](https://github.com/TrystanW02/Active-Directory-Project/tree/main/Setups-%26-Configurations)
+For in depth setups and configurations of each machine, click [here](https://github.com/TrystanW02/Active-Directory-Project/tree/main/Setups-%26-Configurations)!
+
+<br>
+
+***
+
+# Project Highlights
+
+
