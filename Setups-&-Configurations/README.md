@@ -313,6 +313,37 @@ source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 
 <br>
 
+## Enable Remote Desktop Protocol (RDP)
+
+1. Search "PC" in the search bar, click on "Properties" >> click "Advanced system settings", login with the administrator credentials
+
+2. Click the "Remote" tab >> select "Allow remote connections to the computer", click "Select Users" >> add the 2 users that were created earlier
+
+## Install & configure Atomic Red Team
+
+1. Open Powershell with admin privileges
+
+2. Type `Set-ExecutionPolicy Bypass CurrentUser` >> type "Y", hit "Enter"
+
+3. Navigate to Windows Security >> click "Virus & threat protection", "Manage settings" >> under "Exclusions", click "Add or remove exclusions" >> Add an exclusion and select "Folder" >> select the "C:" drive >> login as administrator
+
+4. Run the following commands to install ATR:
+```
+IEX (IWR https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicredteam.ps1 -UseBasicParsing);
+```
+```
+Install-AtomicRedTeam -getAtomics
+```
+
+5. Hit "Y" when prompted to install dependencies
+
+6. Navigate to the "C:" drive, click into the "AtomicRedTeam" >> "atomics"
+
+7. These tactics match with the MITRE ATT&CK framework. To use any of them, type the following command:
+```
+Invoke-AtomicTest [TECHNIQUE-TO-TEST]
+```
+
 ***
 
 # Kali Linux (Attacker)
@@ -338,4 +369,19 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get intall -y crowbar
 ```
 
-5. 
+5. Type `cd /usr/share/wordlists` >> `sudo gunzip rockyou.txt.gz` to unzip the textfile
+
+6. Copy the textfile to the new project folder `cp rockyou.txt ~/Desktop/ad-project` >> change into the directory now `cd ~/Desktop/ad-project`
+
+7. Just to use the first 20 lines, use the following command:
+```
+head -n 20 rockyou.txt > passwords.txt
+```
+
+8. To see the contents of the file, use `cat passwords.txt`
+
+9. To edit the file in order to target a specific password, use `nano passwords.txt` >> add the password you've been using to the list >> Ctrl + X to save
+
+10. To execute the tool, type the following command:
+```
+crowbar -b rdp -u [user-to-target] -C passwords.txt -s [target-IP/32] 
