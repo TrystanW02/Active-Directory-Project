@@ -47,40 +47,100 @@ sudo netplan apply
 
 ## Initial installation & configuration of Splunk
 
+<br>
+
+> :memo: **Note:** Steps 1-3 are done on your ***HOST MACHINE***
+
 1. Navigate to https://www.splunk.com/ (**on host machine**) and create an account if you don't already have one.
+
+<br>
+
 2. Navigate to "Trials & Downloads" and scroll to find "Splunk Enterprise"
+
+<br>
+
 3. Select "Linux" and the ".deb" file path
+
+<br>
+
 4. Navigate back to the Ubuntu VM and type the following command:
 ```
 sudo apt-get install virtualbox-guest-additions-iso
 ```
+
+<br>
+
 5. Hit "Enter" to install package
+
+<br>
+
 6. Navigate to the top navigation bar, click "Devices" >> "Shared Folders" >> "Shared Folders Settings" >> "Add new shared folder"
+
+<br>
+
 7. Select the folder you downloaded the Splunk installer and select all 3 checkboxes
+
+<br>
+
 8. Back at the command line, type `sudo reboot` and sign back in
+
+<br>
+
 9. Type the following command:
 ```
 sudo apt-get install virtualbox-guest-utils
 ```
+
+<br>
+
 10. Type `sudo reboot`
+
+<br>
+
 11. Type the following command:
 ```
 sudo adduser [yourusername] vboxsf
 ```
+
+<br>
+
 12. Type `mkdir share` >> `ls` to confirm the new folder was created
+
+<br>
+
 13. Type the following command:
 ```
 sudo mount -t vboxsf -o uid=1000,gid=1000 [shared-folder-name] share/
 ```
+
+<br>
+
 14. Type `cd share` >> Type the following command to install Splunk:
 ```
 sudo dpkg -i [splunk-file-name]
 ```
+
+<br>
+
 15. Type `cd /opt/splunk` >> `ls -la` to confirm
+
+<br>
+
 16. Change to the user 'splunk' by typing `sudo -u splunk bask`
+
+<br>
+
 17. Type `cd bin` >> `./splunk start` to run installer
+
+<br>
+
 18. Type in your desired 'Administrator' username & password
+
+<br>
+
 19. To ensure Splunk starts everytime the machine starts, type `exit` >> `cd bin` >> `sudo ./splunk enable boot-start -user splunk`
+
+<br>
 
 ***
 
