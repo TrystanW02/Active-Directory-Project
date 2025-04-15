@@ -11,6 +11,7 @@
 ```
 sudo nano /etc/netplan/00-installer-config-yaml
 ```
+
 <br>
 
 2. The configuartion file should look like this in order to work:
@@ -27,11 +28,20 @@ network:
               via: 192.168.10.1
    version: 2
 ```
+
+<br>
+
 3. Save by hitting "Ctrl + X", type in "Y" <br>
+
+<br>
+
 4. Type the following command to apply the settings <br>
 ```
 sudo netplan apply
 ```
+
+<br>
+
 ## Initial installation & configuration of Splunk
 1. Navigate to https://www.splunk.com/ (**on host machine**) and create an account if you don't already have one.
 2. Navigate to "Trials & Downloads" and scroll to find "Splunk Enterprise"
