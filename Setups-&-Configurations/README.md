@@ -7,11 +7,17 @@
 2. [Windows 10 (Target)](#windows-10-target)
    - [Configure the network](#configure-the-network-windows)
    - [Install & configure Universal Forwarder and Sysmon](#install-&-configure-universal-forwarder-and-sysmon)
+   - [Add PC to the domain](#add-pc-to-the-domain)
+   - [Enable Remote Desktop Protocol (RDP)](#enable-remote-desktop-protocol-rdp)
+   - [Install & configure Atomic Red Team](#install--configure-atomic-red-team)
 3. [Windows Server 2022 (Active Directory & Domain Controller)](#windows-server-2022-active-directory--domain-controller)
    - [Configure the network](#configure-the-network-server)
    - [Add domain services and promote to domain controller](#add-domain-services-and-promote-to-domain-controller)
    - [Add users to the domain](#add-users-to-the-domain)
 4. [Kali Linux (Attacker)](#kali-linux-attacker)
+   - [Configure the network](#configure-the-network-attacker)
+   - [Update & upgrade](#update--upgrade)
+   - [Install "Crowbar"](#install-crowbar)
 
 # *Ubuntu Server 22.04.5 (Splunk)*
 
@@ -382,58 +388,64 @@ Invoke-AtomicTest [TECHNIQUE-TO-TEST]
 
 <br>
 
+## Configure the network (Attacker)
+
 1. Assign the IP address from the [project breakdown](https://github.com/TrystanW02/Active-Directory-Project?tab=readme-ov-file#project-breakdown)
 
 <br>
 
-2. Update all of the repositories with the following command:
+## Update & upgrade
+
+1. Update all of the repositories with the following command:
 ```
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
 <br>
 
-3. Make a new directory called "ad-project"
+## Install "Crowbar"
+
+1. Make a new directory called "ad-project"
 ```
 mkdir ad-project
 ```
 
 <br>
 
-4. Type the following command to install the application "Crowbar":
+2. Type the following command to install the application "Crowbar":
 ```
 sudo apt-get intall -y crowbar
 ```
 
 <br>
 
-5. Type `cd /usr/share/wordlists` >> `sudo gunzip rockyou.txt.gz` to unzip the textfile
+3. Type `cd /usr/share/wordlists` >> `sudo gunzip rockyou.txt.gz` to unzip the textfile
 
 <br>
 
-6. Copy the textfile to the new project folder `cp rockyou.txt ~/Desktop/ad-project` >> change into the directory now `cd ~/Desktop/ad-project`
+4. Copy the textfile to the new project folder `cp rockyou.txt ~/Desktop/ad-project` >> change into the directory now `cd ~/Desktop/ad-project`
 
 <br>
 
-7. Just to use the first 20 lines, use the following command:
+5. Just to use the first 20 lines, use the following command:
 ```
 head -n 20 rockyou.txt > passwords.txt
 ```
 
 <br>
 
-8. To see the contents of the file, use:
+6. To see the contents of the file, use:
 ```
 cat passwords.txt
 ```
 
 <br>
 
-9. To edit the file in order to target a specific password, use `nano passwords.txt` >> add the password you've been using to the list >> Ctrl + X to save
+7. To edit the file in order to target a specific password, use `nano passwords.txt` >> add the password you've been using to the list >> Ctrl + X to save
 
 <br>
 
-10. To execute the tool, type the following command:
+8. To execute the tool, type the following command:
 ```
 crowbar -b rdp -u [TARGET-USER] -C passwords.txt -s [TARGET-IP/32] 
 ```
