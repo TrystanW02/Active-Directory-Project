@@ -1,10 +1,10 @@
 # Table of Contents
 
-1. [Ubuntu Server 22.04.5 (Splunk)](#ubuntu-server-22.04.5-(splunk))
+1. [Ubuntu Server 22.04.5 (Splunk)](#ubuntu-server-22045-splunk)
    - [Configure the network](#concfigure-the-network)
    - [Initial installation & configuration of Splunk](#initial-installation-&-configuration-of-Splunk)
    - [Finalize Splunk server configuration](#finalize-splunk-server-configuration)
-2. [Windows 10 (Target)](#windows-10-(target))
+2. [Windows 10 (Target)](#windows-10-target)
 
 # *Ubuntu Server 22.04.5 (Splunk)*
 
