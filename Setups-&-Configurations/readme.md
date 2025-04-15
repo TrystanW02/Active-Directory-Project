@@ -3,6 +3,8 @@
 1. [Ubuntu Server 22.04.5 (Splunk)](#ubuntu-server-22.04.5-(splunk))
    - [Configure the network](#concfigure-the-network)
    - [Initial installation & configuration of Splunk](#initial-installation-&-configuration-of-Splunk)
+   - [Finalize Splunk server configuration](#finalize-splunk-server-configuration)
+2. [Windows 10 (Target)](#windows-10-(target))
 
 # *Ubuntu Server 22.04.5 (Splunk)*
 
@@ -144,18 +146,44 @@ sudo dpkg -i [splunk-file-name]
 
 ***
 
-### *Windows 10 Machine (Target)*
+## *Windows 10 (Target)*
+
+<br>
+
 > :memo: **Optional:** You can change the name of the target machine to "Target" to better differenctiate the machines from each other
 >
 > :bulb: **Attention:** All of the following steps will be done on the WINDOWS 10 TARGET MACHINE.
 
+<br>
+
 1. Search for "cmd" in the search bar, then run `ipconfig` to see the IP address of the machine
+
+<br>
+
 2. Change the IP address to match the [project breakdown](#project-breakdown)
+
+<br>
+
 3. Go to https://www.splunk.com/ (**on windows target machine**) and navigate to "Trials & Downloads" >> Start downloading "Universal Forwarder" for Windows 10
+
+<br>
+
 4. Open the installer and follow the directions >> select a username and leave the "random password" box checked >> enter the IP address for the Splunk server in the "Receiving Indexer" box
+
+<br>
+
 5. Navigate to https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon and click "Download Sysmon" >> go to https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml and download the raw .xml file
+
+<br>
+
 6. Once sysmon is downloaded, "extract all" >> right click the top file manager bar, copy
+
+<br>
+
 7. Open Powershell and run as administrator >> type `cd` then paste in the file path >> type `.\Sysmon64.exe -i ..\sysmonconfig.xml`
+
+<br>
+
 8. Search notepad and run as administrator >> type the following:
 ```
 [WinEventLog://Application]
@@ -176,19 +204,46 @@ disabled = false
 renderXml = true
 source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 ```
+
+<br>
+
 9. Save the file to the following directory: C:\Program Files\SplunkUniversalForwarder\etc\system\local and save it as `inputs.conf`
 
 > :memo: **Note:** 1) Any changes you make to this file will require you to restart Splunk Forwarder services
 > 2) You will have to change the Log On to "Local System account"
 
+<br>
+
 ***
 
-### Finalize Splunk server configuration
+## Finalize Splunk server configuration
 
-> :bulb: **Attention:** All of the following steps will be done on the WINDOWS 10 TARGET MACHINE.
+<br>
+
+> :warning: **Attention:** All of the following steps will be done on the WINDOWS 10 TARGET MACHINE.
+>
+> :warning: **Attention:** The following steps CANNOT be completed until the inital installation and configuration of Splunk and Sysmon.
+
+<br>
 
 1. Navigate to Splunk Enterprise by typing the IP address into the web browser search
+
+<br>
+
 2. Type in the credentials you chose
+
+<br>
+
 3. Hover over Settings >> "Indexes" >> "New Index" >> Type in "endpoint", click Save
+
+<br>
+
 4. Hover over Settings >> "Forwarding and receiving" >> under "Receive data", click on "Configure receiving" >> "New Receiving Port" >> the default port for Splunk is *9997*
+
+<br>
+
 5. To confirm the setup was successful, click "Apps" >> "Search & Reporting" >> type in "index=endpoint" >> this screen should show the events that have been reported!
+
+<br>
+
+***
