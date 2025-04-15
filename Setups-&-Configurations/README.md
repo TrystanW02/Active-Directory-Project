@@ -377,6 +377,7 @@ Invoke-AtomicTest [TECHNIQUE-TO-TEST]
 
 # Kali Linux (Attacker)
 >:warning: **Warning:** The use of this OS is for educational purposes only. I do not condone, nor encourage the use of unauthorized attacks on any machine. Always practice safe, ***AND ETHICAL***, hacking.
+>
 >:memo: **Note:** The default username and password is ***kali***
 
 <br>
