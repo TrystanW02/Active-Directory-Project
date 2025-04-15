@@ -172,7 +172,7 @@ sudo ./splunk enable boot-start -user splunk
 
 <br>
 
-> :warning: **Attention:** All of the following steps will be done on the WINDOWS 10 TARGET MACHINE.
+> :warning: **Attention:** All of the following steps will be done on the ***WINDOWS 10 TARGET MACHINE***.
 >
 > :warning: **Attention:** The following steps CANNOT be completed until the inital installation and configuration of Splunk and Sysmon.
 
