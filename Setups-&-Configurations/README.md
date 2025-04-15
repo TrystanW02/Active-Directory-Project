@@ -8,7 +8,7 @@
    - [Configure the network](#configure-the-network-windows)
    - [Install & configure Universal Forwarder and Sysmon](#install-&-configure-universal-forwarder-and-sysmon)
 3. [Windows Server 2022 (Active Directory & Domain Controller)](#windows-server-2022-active-directory--domain-controller)
-   - [Configure the network (Server)](#configure-the-network-server)
+   - [Configure the network](#configure-the-network-server)
    - [Add domain services and promote to domain controller](#add-domain-services-and-promote-to-domain-controller)
    - [Add users to the domain](#add-users-to-the-domain)
 
