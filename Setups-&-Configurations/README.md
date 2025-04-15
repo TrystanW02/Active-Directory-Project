@@ -312,3 +312,30 @@ source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 2. Repeat the same process, but change the Organizational Unit to "HR"
 
 <br>
+
+***
+
+# Kali Linux (Attacker)
+
+>:memo: **Note:** The default username and password is ***kali***
+>
+>:warning: **Warning:** The use of this OS is for educational purposes only. I do not condone, nor encourage the use of unauthorized attacks on any machine. Always practice safe, ***AND ETHICAL***, hacking.
+<br>
+
+1. Assign the IP address from the [project breakdown](https://github.com/TrystanW02/Active-Directory-Project?tab=readme-ov-file#project-breakdown)
+
+2. Update all of the repositories with the following command:
+```
+sudo apt-get update && sudo apt-get upgrade -y
+```
+
+<br>
+
+3. Make a new directory called "ad-project" `mkdir ad-project`
+
+4. Type the following command to install the application "Crowbar":
+```
+sudo apt-get intall -y crowbar
+```
+
+5. 
