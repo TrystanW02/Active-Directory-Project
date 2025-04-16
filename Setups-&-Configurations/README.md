@@ -33,7 +33,7 @@
 
 1.   Assign the static IP address. To do this, type the following command
 ```
-sudo nano /etc/netplan/00-installer-config-yaml
+sudo nano /etc/netplan/00-installer-config.yaml
 ```
 
 <br>
@@ -86,7 +86,7 @@ sudo netplan apply
 
 4. Navigate back to the Ubuntu VM and type the following command:
 ```
-sudo apt-get install virtualbox-guest-additions-iso
+sudo apt-get install virtualbox-guest-additions.iso
 ```
 
 <br>
