@@ -33,12 +33,12 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 - **IPv4 Prefix:** 192.168.10.0/24
 
 ### *Host*
-| *Hostname [project-ad-...]* | *IP Address*   | *Function*                          |
-|-----------------------------|----------------|-------------------------------------|
-|-dc (project-ad-dc.com)      | 192.168.10.7   | Domain Controller (DNS, DHCP, etc.) |
-|-splunk-svr                  | 192.168.10.10  | SIEM/Logs                           |
-|-win-client                  | Dynamic        | Windows Workstation                 |
-| attacker                    | 192.168.10.250 | Attacker Envrionment                |
+| *Hostname [project-ad-...]* | *IP Address*   | Subnet Mask   | Default Gateway | DNS Server |*Function*                           |
+|-----------------------------|----------------|---------------|-----------------|------------|-------------------------------------|
+|-dc (project-ad-dc.com)      | 192.168.10.7   | 255.255.255.0 | 192.168.10.1    | 8.8.8.8    | Domain Controller (DNS, DHCP, etc.) |
+|-splunk-svr                  | 192.168.10.10  | 255.255.255.0 | 192.168.10.1    |            | SIEM/Logs                           |
+|-win-client                  | Dynamic        | 255.255.255.0 | 192.168.10.1    |            | Windows Workstation                 |
+| attacker                    | 192.168.10.250 | 255.255.255.0 | 192.168.10.1    |            | Attacker Envrionment                |
 
 ### *Accounts & Passwords*
 | *Account*                        | *Password* | *Host*         |
