@@ -20,6 +20,12 @@
    - [Install "Crowbar"](#install-crowbar)
 
 # *Ubuntu Server 22.04.5 (Splunk)*
+> :memo: **Note:** After the inital installation is complete and you have logged in using the credentials you created, run the following command:
+>
+> ```
+> sudo apt-get update && sudo apt-get upgrade -y
+> ```
+
 
 ## Configure the network (Ubuntu)
 
