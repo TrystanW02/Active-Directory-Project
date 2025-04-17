@@ -77,13 +77,3 @@ For in depth setups and configurations of each machine, click [here](https://git
 <br>
 
 ***
-
-# Project Highlights
-
-## Viewing Telemetry
-
-## Attacking The Domain
-
-## Adding Users Via Powershell
-
-## Implementing A File Intergrity Monitor
