@@ -77,3 +77,9 @@ For in depth setups and configurations of each machine, click [here](https://git
 <br>
 
 ***
+
+# Project Highlights
+
+<br>
+
+> :memo: This section is meant to show off what this project is capable of! Any new additions to this original project will be shown in this section!
