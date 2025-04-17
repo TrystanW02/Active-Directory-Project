@@ -104,3 +104,46 @@ Bianka Adomaitienė
 Josie Salah
 Helmfrid Mertens
 ```
+
+<br>
+
+### Organizational Units
+
+For this portion, I chose to only add 5 different organizational units: `_IT`, `_HR`, `_ACCOUNTING`, `_MANAGEMENT`, `_CSUITE`. Instead of adding individual users first, then adding them to the units later, this script is made to do both with one run of the script.
+
+<br>
+
+### Powershell Script
+
+Below is the code for one of the organizational units, the `_IT` unit.
+
+```Powershell
+﻿# ----- Edit these Variables for your own Use Case ----- #
+$PASSWORD_FOR_USERS   = "Il0vePCs"
+$USER_FIRST_LAST_LIST = Get-Content .\IT_Names.txt
+# ------------------------------------------------------ #
+
+$password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force
+New-ADOrganizationalUnit -Name _IT -ProtectedFromAccidentalDeletion $false
+
+foreach ($n in $USER_FIRST_LAST_LIST) {
+    $first = $n.Split(" ")[0].ToLower()
+    $last = $n.Split(" ")[1].ToLower()
+    $username = "$($first.Substring(0,1))$($last)".ToLower()
+    Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan
+
+    New-AdUser -AccountPassword $password `
+               -GivenName $first `
+               -Surname $last `
+               -DisplayName $username `
+               -Name $username `
+               -EmployeeID $username `
+               -PasswordNeverExpires $true `
+               -Path "ou=_IT,$(([ADSI]`"").distinguishedName)" `
+               -Enabled $true
+}
+```
+
+<br>
+
+This code allows for the creation of the organizational unit, pulls the names of each employee from `IT_Names.txt`, and creates the username and password for each user!
