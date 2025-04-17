@@ -151,13 +151,13 @@ This code allows for the creation of the organizational unit, pulls the names of
 ### Images
 
 1. Active Directory Users and Computers *before* the addition of users <br>
-[Before Addition of Users](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135015.png?raw=true)
+![Before Addition of Users](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135015.png?raw=true)
 
 2. Active Directory Users and Computers *after* the additon of users <br>
-[After Addition of Users](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135440.png?raw=true)
+![After Addition of Users](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135440.png?raw=true)
 
 3. _IT Organizational Unit w/ Users <br>
-[OU w/ Users](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135508.png?raw=true)
+![OU w/ Users](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135508.png?raw=true)
 
 4. Abbigail Aguirre Account <br>
-[Abbigail Aguirre Account](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135824.png?raw=true)
+![Abbigail Aguirre Account](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135824.png?raw=true)
