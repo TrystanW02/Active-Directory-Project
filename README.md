@@ -102,13 +102,14 @@ The purpose of this addition is to have the ability to quickly provision new use
 
 ### Names for each of the accounts
 
-Each of the scripts need a ".txt" file that has the names of the employees in the unit. Each one of these text files has 5 randomly generated names to be added to the units. Below are the contents of each text file:
+Each of the scripts need a ".txt" file that has the names of the employees in the unit. Each one of these text files has 5 randomly generated names to be added to the units. Below is an example of what each text file looks like, specifically the "`Accounting_Names.txt`":
 
 <br>
 
-- Accounting_Names.txt
-  - Be'ula Sokolov
-  - Karina Adebayo
-  - Bianka Adomaitienė
-  - Josie Salah
-  - Helmfrid Mertens
+```
+Be'ula Sokolov
+Karina Adebayo
+Bianka Adomaitienė
+Josie Salah
+Helmfrid Mertens
+```
