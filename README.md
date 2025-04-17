@@ -83,3 +83,32 @@ For in depth setups and configurations of each machine, click [here](https://git
 <br>
 
 > :memo: This section is meant to show off what this project is capable of! Any new additions to this original project will be shown in this section!
+
+<br>
+
+## Adding New Organizational Units and Users via PowerShell Scripting
+
+<br>
+
+> :bulb: The following images show how to add organizational units and users through powershell scripting. All of the original files are located [here](https://github.com/TrystanW02/Active-Directory-Project/tree/main/Powershell_Scripts/Create_OUs_%26_Users)!
+
+ <br>
+ 
+### *Purpose*
+
+The purpose of this addition is to have the ability to quickly provision new user accounts, without the need of having to go manually add every user in an organization to their respective unit. The goal is to eventually consolidate all of the code into 1 single script, and to eventually add GPO for each unit! Each of the organizational units is meant to have different levels of access to the organizations resources.
+
+<br>
+
+### Names for each of the accounts
+
+Each of the scripts need a ".txt" file that has the names of the employees in the unit. Each one of these text files has 5 randomly generated names to be added to the units. Below are the contents of each text file:
+
+<br>
+
+- Accounting_Names.txt
+  - Be'ula Sokolov
+  - Karina Adebayo
+  - Bianka Adomaitienė
+  - Josie Salah
+  - Helmfrid Mertens
