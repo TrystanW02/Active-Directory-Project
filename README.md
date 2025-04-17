@@ -147,3 +147,17 @@ foreach ($n in $USER_FIRST_LAST_LIST) {
 <br>
 
 This code allows for the creation of the organizational unit, pulls the names of each employee from `IT_Names.txt`, and creates the username and password for each user!
+
+### Images
+
+1. Active Directory Users and Computers *before* the addition of users
+[Before Addition of Users]
+
+2. Active Directory Users and Computers *after* the additon of users
+[After Addition of Users]
+
+3. _IT Organizational Unit w/ Users
+[OU w/ Users]
+
+4. Abbigail Aguirre Account
+[Abbigail Aguirre Account]
