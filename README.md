@@ -9,7 +9,7 @@
 2. [Getting Started](#getting-started)
    - [Provision Each Machine](#install-and-provision-each-os-needed-for-the-project)
 3. [Project Highlights](#project-highlights)
-   - [1. Adding New Organizational Units and Users via PowerShell Scripting](#1
+   - [1. Adding New Organizational Units and Users via PowerShell Scripting](#1-adding-new-organizational-units-and-users-via-powershell-scripting)
 
 
 ***
