@@ -79,21 +79,15 @@ For in depth setups and configurations of each machine, click [here](https://git
 
 > :memo: This section is meant to show off what this project is capable of! Any new additions to this original project will be shown in this section!
 
-<br>
-
 ## Adding New Organizational Units and Users via PowerShell Scripting
 
 > :bulb: The following images show how to add organizational units and users through powershell scripting. All of the original files are located [here](https://github.com/TrystanW02/Active-Directory-Project/tree/main/Powershell_Scripts/Create_OUs_%26_Users)!
-
- <br>
  
-### *Purpose*
+## *Purpose*
 
 The purpose of this addition is to have the ability to quickly provision new user accounts, without the need of having to go manually add every user in an organization to their respective unit. The goal is to eventually consolidate all of the code into 1 single script, and to eventually add GPO for each unit! Each of the organizational units is meant to have different levels of access to the organizations resources.
 
-<br>
-
-### Names for each of the accounts
+## Names for each of the accounts
 
 Each of the scripts need a ".txt" file that has the names of the employees in the unit. Each one of these text files has 5 randomly generated names to be added to the units. Below is an example of what each text file looks like, specifically the `IT_Names.txt`:
 
@@ -105,15 +99,11 @@ Clemency Tennyson
 Christabelle Crosby
 ```
 
-<br>
-
-### Organizational Units
+## Organizational Units
 
 For this portion, I chose to only add 5 different organizational units: `_IT`, `_HR`, `_ACCOUNTING`, `_MANAGEMENT`, `_CSUITE`. Instead of adding individual users first, then adding them to the units later, this script is made to do both with one run of the script.
 
-<br>
-
-### Powershell Script
+## Powershell Script
 
 Below is the code for one of the organizational units, the `_IT` unit.
 
@@ -144,11 +134,9 @@ foreach ($n in $USER_FIRST_LAST_LIST) {
 }
 ```
 
-<br>
-
 This code allows for the creation of the organizational unit, pulls the names of each employee from `IT_Names.txt`, and creates the username and password for each user!
 
-### Images
+## Images
 
 1. **Active Directory Users and Computers *before* the addition of users** <br>
 
