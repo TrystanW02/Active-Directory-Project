@@ -9,10 +9,7 @@
 2. [Getting Started](#getting-started)
    - [Provision Each Machine](#install-and-provision-each-os-needed-for-the-project)
 3. [Project Highlights](#project-highlights)
-   - [Viewing Telemetry](#viewing-telemetry)
-   - [Attacking The Domain](#attacking-the-domain)
-   - [Adding Users Via Powershell](#adding-users-via-powershell)
-   - [Implementing A File Intergrity Monitor](#implementing-a-file-integrity-monitor)
+
 
 ***
 
@@ -80,15 +77,11 @@ For in depth setups and configurations of each machine, click [here](https://git
 
 # Project Highlights
 
-<br>
-
 > :memo: This section is meant to show off what this project is capable of! Any new additions to this original project will be shown in this section!
 
 <br>
 
 ## Adding New Organizational Units and Users via PowerShell Scripting
-
-<br>
 
 > :bulb: The following images show how to add organizational units and users through powershell scripting. All of the original files are located [here](https://github.com/TrystanW02/Active-Directory-Project/tree/main/Powershell_Scripts/Create_OUs_%26_Users)!
 
@@ -103,8 +96,6 @@ The purpose of this addition is to have the ability to quickly provision new use
 ### Names for each of the accounts
 
 Each of the scripts need a ".txt" file that has the names of the employees in the unit. Each one of these text files has 5 randomly generated names to be added to the units. Below is an example of what each text file looks like, specifically the "`Accounting_Names.txt`":
-
-<br>
 
 ```
 Be'ula Sokolov
