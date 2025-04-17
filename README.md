@@ -79,7 +79,7 @@ For in depth setups and configurations of each machine, click [here](https://git
 
 > :memo: This section is meant to show off what this project is capable of! Any new additions to this original project will be shown in this section!
 
-## Adding New Organizational Units and Users via PowerShell Scripting
+## 1. Adding New Organizational Units and Users via PowerShell Scripting
 
 > :bulb: The following images show how to add organizational units and users through powershell scripting. All of the original files are located [here](https://github.com/TrystanW02/Active-Directory-Project/tree/main/Powershell_Scripts/Create_OUs_%26_Users)!
  
