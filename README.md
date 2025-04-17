@@ -95,14 +95,14 @@ The purpose of this addition is to have the ability to quickly provision new use
 
 ### Names for each of the accounts
 
-Each of the scripts need a ".txt" file that has the names of the employees in the unit. Each one of these text files has 5 randomly generated names to be added to the units. Below is an example of what each text file looks like, specifically the "`Accounting_Names.txt`":
+Each of the scripts need a ".txt" file that has the names of the employees in the unit. Each one of these text files has 5 randomly generated names to be added to the units. Below is an example of what each text file looks like, specifically the `IT_Names.txt`:
 
 ```
-Be'ula Sokolov
-Karina Adebayo
-Bianka Adomaitienė
-Josie Salah
-Helmfrid Mertens
+Marvel Gallardo
+Abbigail Aguirre
+Olabode Ashton
+Clemency Tennyson
+Christabelle Crosby
 ```
 
 <br>
@@ -150,14 +150,14 @@ This code allows for the creation of the organizational unit, pulls the names of
 
 ### Images
 
-1. Active Directory Users and Computers *before* the addition of users
-[Before Addition of Users]
+1. Active Directory Users and Computers *before* the addition of users <br>
+[Before Addition of Users](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135015.png?raw=true)
 
-2. Active Directory Users and Computers *after* the additon of users
-[After Addition of Users]
+2. Active Directory Users and Computers *after* the additon of users <br>
+[After Addition of Users](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135440.png?raw=true)
 
-3. _IT Organizational Unit w/ Users
-[OU w/ Users]
+3. _IT Organizational Unit w/ Users <br>
+[OU w/ Users](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135508.png?raw=true)
 
-4. Abbigail Aguirre Account
-[Abbigail Aguirre Account]
+4. Abbigail Aguirre Account <br>
+[Abbigail Aguirre Account](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135824.png?raw=true)
