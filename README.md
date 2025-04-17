@@ -150,14 +150,26 @@ This code allows for the creation of the organizational unit, pulls the names of
 
 ### Images
 
-1. Active Directory Users and Computers *before* the addition of users <br>
+1. **Active Directory Users and Computers *before* the addition of users** <br>
+
+<br>
+
 ![Before Addition of Users](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135015.png?raw=true)
 
-2. Active Directory Users and Computers *after* the additon of users <br>
+2. **Active Directory Users and Computers *after* the additon of users** <br>
+
+<br>
+
 ![After Addition of Users](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135440.png?raw=true)
 
-3. _IT Organizational Unit w/ Users <br>
+3. **_IT Organizational Unit w/ Users** <br>
+
+<br>
+
 ![OU w/ Users](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135508.png?raw=true)
 
-4. Abbigail Aguirre Account <br>
+4. **Abbigail Aguirre Account** <br>
+
+<br>
+
 ![Abbigail Aguirre Account](https://github.com/TrystanW02/Active-Directory-Project/blob/main/Images/Screenshot%202025-04-17%20135824.png?raw=true)
