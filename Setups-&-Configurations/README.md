@@ -19,7 +19,7 @@
    - [Update & upgrade](#update--upgrade)
    - [Install "Crowbar"](#install-crowbar)
 
-# *Ubuntu Server 22.04.5 (Splunk)*
+# *Ubuntu Server 24.04.2 (Splunk)*
 > :memo: **Note:** After the inital installation is complete and you have logged in using the credentials you created, run the following command:
 >
 > ```
@@ -33,7 +33,7 @@
 
 1.   Assign the static IP address. To do this, type the following command
 ```
-sudo nano /etc/netplan/00-installer-config.yaml
+sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
 <br>
@@ -86,7 +86,7 @@ sudo netplan apply
 
 4. Navigate back to the Ubuntu VM and type the following command:
 ```
-sudo apt-get install virtualbox-guest-additions.iso
+sudo apt-get install virtualbox-guest-additions-iso
 ```
 
 <br>
@@ -136,7 +136,7 @@ sudo adduser [USER-NAME] vboxsf
 
 13. Type the following command:
 ```
-sudo mount -t vboxsf -o uid=1000,gid=1000 [shared-folder-name] share/
+sudo mount -t vboxsf -o uid=1000,gid=1000 [SHARED-FOLDER-NAME] share/
 ```
 
 <br>
@@ -244,7 +244,7 @@ sudo ./splunk enable boot-start -user splunk
 
 <br>
 
-3. Navigate to https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon and click "Download Sysmon" >> go to https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml and download the raw .xml file
+3. Navigate to this link for [Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) and click "Download Sysmon" >> go to this link for the [Sysmon Config File](https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml) and download the raw .xml file
 
 <br>
 
