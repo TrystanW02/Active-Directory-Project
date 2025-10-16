@@ -31,7 +31,7 @@ The purpose of this project is to get familiar with Windows Active Directory. Th
 ### *Host*
 | *Hostname [project-ad-...]* | *IP Address*   | Subnet Mask   | Default Gateway | DNS Server   |*Function*                           |
 |-----------------------------|----------------|---------------|-----------------|--------------|-------------------------------------|
-|-dc (project-ad-dc.com)      | 192.168.10.7   | 255.255.255.0 | 192.168.10.1    | 8.8.8.8      | Domain Controller (DNS, DHCP, etc.) |
+|-dc (project-ad.com)      | 192.168.10.7   | 255.255.255.0 | 192.168.10.1    | 8.8.8.8      | Domain Controller (DNS, DHCP, etc.) |
 |-splunk-svr                  | 192.168.10.10  | 255.255.255.0 | 192.168.10.1    | 8.8.8.8      | SIEM/Logs                           |
 |-win-client                  | 192.168.10.100 | 255.255.255.0 | 192.168.10.1    | 192.168.10.7 | Windows Workstation                 |
 | attacker                    | 192.168.10.250 | 255.255.255.0 | 192.168.10.1    | 8.8.8.8      | Attacker Envrionment                |
